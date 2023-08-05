@@ -48,7 +48,7 @@ goerli: 0x049Ced198d9Aa24fA940477917e4E868115Aa198
 
 ```
 
-> [!NOTE] Read Carefully
+> [!NOTE]
 > Before executing the script to interact with the on-chain contract, it is essential to ensure that you have compiled the contract to generate the ABI (Application Binary Interface). The ABI is a crucial requirement for seamless interaction with the on-chain contract.
 
 <p align="center"><a href="/" target="_blank"><img src="https://github.com/3ill/VOT3/blob/main/assets/aya.jpg" width="300"></a></p>
