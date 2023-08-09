@@ -1,12 +1,15 @@
 const { ethers } = require('hardhat');
 
 const main = async () => {
-  const Vault = await ethers.getContractFactory('Vault');
-  const vault = await Vault.deploy();
+  try {
+    const Vault = await ethers.getContractFactory('Vault');
+    const vault = await Vault.deploy();
 
-  const vaultAddress = await vault.getAddress();
-
-  console.log(`Contract deployed at ${vaultAddress} `);
+    const contractAddress = await vault.getAddress();
+    console.log(contractAddress);
+  } catch (error) {
+    console.error('you encountered an error', error);
+  }
 };
 
 main().catch((error) => {
